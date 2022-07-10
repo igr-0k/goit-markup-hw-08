@@ -1,0 +1,20 @@
+.section-title,
+.features__subtitle,
+.team-mmbr,
+.poject-title {
+  color: var(--title-color);
+}
+
+.section-title {
+  font-family: inherit;
+
+  @include font(700, 28px, 1.18, 0.03em);
+
+  @include desktop {
+    @include font(700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
+  }
+
+  margin-bottom: 30px;
+  text-align: center;
+}
