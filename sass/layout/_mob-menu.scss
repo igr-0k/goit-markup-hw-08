@@ -92,6 +92,7 @@
 .mob-menu-soc-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -10px;
 }
 
 .mob-menu-soc-item:not(:last-child) {
@@ -102,10 +103,15 @@
 .mob-menu-soc-link {
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
 
   color: var(--accent-color);
   padding: 0 10px;
+
+  @include mobile {
+    font-size: 18px;
+    padding: 0 10px;
+  }
 }
