@@ -1,7 +1,12 @@
 .header {
+  height: 60px;
+  @include tablet {
+    height: 80px;
+  }
+
   border-bottom: 1px solid #ececec;
   background-color: var(--w-color);
-  .container {
+  > .container {
     @extend %align-template;
   }
 }
@@ -9,6 +14,10 @@
 .menu {
   display: flex;
   gap: 50px;
+
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu__link {
@@ -43,6 +52,10 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-left: auto;
+
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts__item:not(:first-child) {
@@ -77,6 +90,18 @@
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.mob-menu-btn {
+  display: block;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 /* Fixed Header */
