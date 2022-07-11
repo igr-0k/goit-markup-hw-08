@@ -506,10 +506,13 @@ img {
 }
 
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
 }
 @media screen and (max-width: 767px) {
   .contacts {

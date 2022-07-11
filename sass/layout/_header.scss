@@ -48,8 +48,10 @@
 }
 
 .contacts {
-  display: flex;
-  flex-wrap: wrap;
+  @include desktop {
+    display: flex;
+  }
+
   justify-content: flex-end;
   margin-left: auto;
 
