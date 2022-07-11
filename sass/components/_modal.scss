@@ -18,7 +18,8 @@
 
   width: 280px;
   min-height: 600px;
-  padding: 24px;
+
+  padding: 40px 24px;
 
   @include mobile {
     width: 450px;
@@ -157,7 +158,11 @@
 }
 
 .privacy-text {
-  @include font(400, 12px, 1.17, 0.03em);
+  @include font(400, 10px, 1.17, 0.03em);
+
+  @include mobile {
+    @include font(400, 12px, 1.17, 0.03em);
+  }
 
   @include desktop {
     @include font(400, 14px, 1.71, 0.03em);
@@ -167,7 +172,7 @@
 
   @extend %align-template;
   justify-content: center;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
 
   a {
     color: var(--accent-color);

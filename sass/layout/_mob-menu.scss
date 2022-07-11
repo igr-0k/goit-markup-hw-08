@@ -14,6 +14,11 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: auto;
+    padding: 20px;
+
+    @include mobile {
+      padding: 40px;
+    }
   }
 
   @include tablet {
@@ -64,10 +69,14 @@
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 32px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @include mobile {
+    font-size: 34px;
+  }
 }
 
 .mob-menu-contacts__mail {
@@ -82,6 +91,7 @@
 
 .mob-menu-soc-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-soc-item:not(:last-child) {
@@ -90,6 +100,7 @@
 }
 
 .mob-menu-soc-link {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
