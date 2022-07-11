@@ -549,9 +549,25 @@ img {
   background-color: transparent;
   border: none;
   padding: 10px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-btn:hover, .mob-menu-btn:focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .mob-menu-btn {
+    display: none;
+  }
+}
+
+.mob-menu-icon {
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-icon {
     display: none;
   }
 }
@@ -604,6 +620,16 @@ body {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu_close-btn:hover, .mob-menu_close-btn:focus {
+  color: var(--accent-color);
+}
+
+.mob-menu-close-icon {
+  fill: currentColor;
 }
 
 .mob-menu-nav__item {

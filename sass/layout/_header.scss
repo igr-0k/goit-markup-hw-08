@@ -99,6 +99,24 @@
   border: none;
   padding: 10px;
 
+  cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.mob-menu-icon {
+  fill: currentColor;
+
   @include tablet {
     display: none;
   }

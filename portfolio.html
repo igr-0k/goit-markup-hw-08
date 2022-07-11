@@ -38,10 +38,10 @@
         <nav class="nav">
           <ul class="menu list">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link link current">Студия</a>
+              <a href="./index.html" class="menu__link link">Студия</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link link current">Портфолио</a>
             </li>
             <li class="menu__item">
               <a href="" class="menu__link link">Контакты</a>
@@ -185,12 +185,27 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/tech_site-desc.jpg"
-                    alt="Загруженный сайт на экране лэптопа"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/tech_site-desc.jpg 1x, ./images/tech_site-desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tech_site-tab.jpg 1x, ./images/tech_site-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/tech_site-mob.jpg 1x, ./images/tech_site-mob-2x.jpg 2x"
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/tech_site-mob.jpg"
+                      alt="Загруженный сайт на экране лэптопа"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -207,12 +222,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/poster_design-desc.jpg"
-                    alt="Два баскетболиста, борющихся за мяч"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/poster_design-desc.jpg    1x,
+                        ./images/poster_design-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster_design-tab.jpg    1x,
+                        ./images/poster_design-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster_design-mob.jpg    1x,
+                        ./images/poster_design-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/poster_design-mob.jpg"
+                      alt="Два баскетболиста, борющихся за мяч"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, praesentium.
                     Exercitationem, sapiente commodi numquam ratione quos explicabo eos debitis!
@@ -231,12 +270,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/restaurant_app-desc.jpg"
-                    alt="Лого ресторана на фоне рыбы"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/restaurant_app-desc.jpg    1x,
+                        ./images/restaurant_app-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restaurant_app-tab.jpg    1x,
+                        ./images/restaurant_app-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/restaurant_app-mob.jpg    1x,
+                        ./images/restaurant_app-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/restaurant_app-mob.jpg"
+                      alt="Лого ресторана на фоне рыбы"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nisi vero id
                     laudantium illum ducimus sed molestias dolorem odio incidunt!
@@ -252,12 +315,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/prime_project-desc.jpg"
-                    alt="Чёрные полноразмерные наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/prime_project-desc.jpg    1x,
+                        ./images/prime_project-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime_project-tab.jpg    1x,
+                        ./images/prime_project-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/prime_project-mob.jpg    1x,
+                        ./images/prime_project-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/prime_project-mob.jpg"
+                      alt="Чёрные полноразмерные наушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos excepturi sit
                     perferendis ipsa laboriosam consequuntur quos! Temporibus unde architecto
@@ -274,12 +361,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/boxes_project-desc.jpg"
-                    alt="Белая и коричневая карнонные коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes_project-desc.jpg    1x,
+                        ./images/boxes_project-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes_project-tab.jpg    1x,
+                        ./images/boxes_project-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes_project-mob.jpg    1x,
+                        ./images/boxes_project-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/boxes_project-mob.jpg"
+                      alt="Белая и коричневая карнонные коробки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eveniet magnam
                     aperiam cupiditate maxime aut atque illo ab architecto dolore.
@@ -295,12 +406,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/inspiration_site-desc.jpg"
-                    alt="Неттоп с сайтом на экране"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/inspiration_site-desc.jpg    1x,
+                        ./images/inspiration_site-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration_site-tab.jpg    1x,
+                        ./images/inspiration_site-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/inspiration_site-mob.jpg    1x,
+                        ./images/inspiration_site-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/inspiration_site-mob.jpg"
+                      alt="Неттоп с сайтом на экране"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore error numquam
                     quo eos, facere laudantium atque voluptate et vero eaque delectus doloribus
@@ -317,12 +452,36 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/edition_design-desc.jpg"
-                    alt="Книга с илюстрациями"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/edition_design-desc.jpg    1x,
+                        ./images/edition_design-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition_design-tab.jpg    1x,
+                        ./images/edition_design-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/edition_design-mob.jpg    1x,
+                        ./images/edition_design-mob-2x.jpg 2x
+                      "
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/edition_design-mob.jpg"
+                      alt="Книга с илюстрациями"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, fugiat. Possimus
                     quibusdam dolores sint. Excepturi aspernatur soluta culpa voluptatem, cumque
@@ -339,12 +498,27 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/lab_project-desc.jpg"
-                    alt="Брендовая бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/lab_project-desc.jpg 1x, ./images/lab_project-desc-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/lab_project-tab.jpg 1x, ./images/lab_project-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/lab_project-mob.jpg 1x, ./images/lab_project-mob-2x.jpg 2x"
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/lab_project-mob.jpg"
+                      alt="Брендовая бирка"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, doloremque.
                     Ratione expedita excepturi esse quasi enim quisquam incidunt iusto. Praesentium
@@ -361,12 +535,30 @@
             <li class="projects-item">
               <a href="" class="project-link link">
                 <div class="project-over-wrap">
-                  <img
-                    src="./images/business_app-desc.jpg"
-                    alt="Ноутбук в рабочих руках"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/business_app-desc.jpg    1x,
+                        ./images/business_app-desc-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/business_app-tab.jpg 1x, ./images/business_app-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/business_app-mob.jpg 1x, ./images/business_app-mob-2x.jpg 2x"
+                      media="(min-width: 240px)"
+                    />
+                    <img
+                      src="./images/business_app-mob.jpg"
+                      alt="Ноутбук в рабочих руках"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
+
                   <p class="project-over-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate culpa,
                     sapiente nisi laudantium voluptates quasi vitae quaerat doloremque eius vel aut
