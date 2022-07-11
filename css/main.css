@@ -45,10 +45,6 @@ input {
   outline: transparent;
 }
 
-* {
-  outline: 1px solid tomato;
-}
-
 body {
   background-color: var(--w-color);
   color: var(--text-color);
