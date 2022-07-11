@@ -158,10 +158,10 @@
 }
 
 .privacy-text {
-  @include font(400, 10px, 1.17, 0.03em);
+  @include font(400, 10px, 2.71, 0.03em);
 
   @include mobile {
-    @include font(400, 12px, 1.17, 0.03em);
+    @include font(400, 12px, 1.71, 0.03em);
   }
 
   @include desktop {
@@ -175,6 +175,7 @@
   flex-wrap: wrap;
 
   a {
+    @include font(400, 10px, 1.71, 0.03em);
     color: var(--accent-color);
   }
 

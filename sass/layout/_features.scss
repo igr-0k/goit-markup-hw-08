@@ -5,6 +5,10 @@
   color: var(--title-color);
 
   margin-bottom: 10px;
+
+  @media screen and(max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features__descr {
@@ -12,35 +16,20 @@
 }
 
 .features {
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @include desktop {
-    display: flex;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .features__item {
   width: 100%;
-
-  @media screen and(max-width: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
 
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
   @include desktop {
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    width: calc((100% - 90px) / 4);
   }
 
   &::before {
