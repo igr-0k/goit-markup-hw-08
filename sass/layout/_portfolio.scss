@@ -81,8 +81,10 @@
 .project-over-text {
   position: absolute;
   top: 0;
-  padding: 63px 24px;
+
   height: 100%;
+
+  padding: 63px 24px;
 
   @include font(400, 18px, 1.56, 0.03em);
 
